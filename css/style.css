@@ -16,6 +16,12 @@ iframe {
 	margin-top: -10px;
 }
 
+img {
+	width: 200px;
+	height: 200px;
+
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
