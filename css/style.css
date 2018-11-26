@@ -27,6 +27,7 @@ img {
     width: 30px;    
     text-decoration: none;
     border-radius: 50%;
+    display: inline-block;
 }
 
 .fa-twitter {
