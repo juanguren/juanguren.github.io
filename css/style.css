@@ -8,6 +8,14 @@ p {
 	font-size: 18px;
 }
 
+text {
+	margin-bottom: 30px;
+}
+
+iframe {
+	margin-top: -10px;
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
