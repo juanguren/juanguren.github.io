@@ -1,5 +1,4 @@
-body
-{
+body {
 	text-align: center;	
 	font-family: "Open Sans", sans-serif;
 }
@@ -10,31 +9,25 @@ p {
 }
 
 .fa {
-
     padding: 20px;
     font-size: 30px;
-    width: 30px;
-    text-align: center;
+    width: 30px;    
     text-decoration: none;
     border-radius: 50%;
 }
 
 .fa-twitter {
-
 	color: #1DA1F3;
 }
 
 .fa-linkedin {
-
 	color: #0274B3;
 }
 
 .fa-500px {
-
 	color: black;
 }
 
 .fa-medium {
-
 	color: #14C767;
 }
