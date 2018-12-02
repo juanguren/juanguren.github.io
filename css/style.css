@@ -21,11 +21,17 @@ img {
 	height: 200px;
 }
 
-#spotify{
+#show {
 	display: none;
+	font-size: 10px;
 }
 
-#px_photo{
+#spotify {
+	display: none;
+	margin-top: -15px;
+}
+
+#px_photo {
 	display: none;
 	width: 100%;
 }
