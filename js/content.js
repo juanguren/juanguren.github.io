@@ -3,28 +3,33 @@ window.onload = function() {
 
   document.getElementById('spotify').style.display = 'none';
   document.getElementById('px_photo').style.display = 'none';
-
 };
 
 function mostrar_spot(){
 
-	var a = document.getElementById("spotify");
-	if (a.style.display === "none")
+	var sp = document.getElementById("spotify");
+	if (sp.style.display === "none")
 {
-		a.style.display = "block";
+		sp.style.display = "block";
 }	else {
-		a.style.display = "none";
+		sp.style.display = "none";
 	}
 }
 
 function mostrar_px(){
 
-	var b = document.getElementById("px_photo");
-	if (b.style.display === "none")
+	var px = document.getElementById("px_photo");
+	if (px.style.display === "none")
 {
-		b.style.display = "block";
+		px.style.display = "block";
 }	else {
-		b.style.display = "none";
+		px.style.display = "none";
 	}
 }
+
+function show_text() {
+	document.getElementById("show").style.display = "inline"; 
+}
+
+setTimeout("show_text()",13000);
 
