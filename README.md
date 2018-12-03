@@ -1,2 +1,2 @@
 # juanguren.github.io
-Simple proyect ro replace about.me profile
+Simple proyect to replace about.me profile
