@@ -17,17 +17,6 @@ function mostrar_spot(){
 	}
 }
 
-function mostrar_px(){
-
-	var px = document.getElementById("px_photo");
-	if (px.style.display === "none")
-{
-		px.style.display = "block";
-}	else {
-		px.style.display = "none";
-	}
-}
-
 function show_text() {
 	document.getElementById("show").style.display = "inline"; 
 }
