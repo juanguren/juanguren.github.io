@@ -1,9 +1,8 @@
 
-
 window.onload = function() {
 
   document.getElementById('spotify').style.display = 'none';
-  document.getElementById('px_photo').style.display = 'none';
+  document.getElementById('instagram').style.display = 'none';
 };
 
 function mostrar_spot(){
