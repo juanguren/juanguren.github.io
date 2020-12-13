@@ -15,6 +15,9 @@ function mostrar_spot(){
 	}
 }
 
+const instaleap = document.getElementById("instaLink");
+instaleap.style.textDecoration = "none";
+
 function show_text() {
 	document.getElementById("show").style.display = "inline"; 
 }
