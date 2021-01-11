@@ -1,2 +1,3 @@
 # juanguren.github.io
-Simple proyect to replace about.me profile
+
+<h2>I hereby begin creating my portfolio</h2>
