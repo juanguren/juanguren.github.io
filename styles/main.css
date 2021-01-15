@@ -43,6 +43,13 @@ header{
     width: 12em;
     border: none;
     cursor: pointer;
+    font-size: 14px;
+}
+
+.main-buttons button:hover{
+    background: royalblue;
+    text-decoration: whitesmoke;
+    color: whitesmoke;
 }
 
 .main-buttons button:nth-child(2){
