@@ -13,7 +13,7 @@ const wordChangeinStart = () =>{
             counter = 0;
         }
         domSpace.textContent = wordArray[counter];
-    }, 2500);
+    }, 2200);
 }
 
 //wordChangeinStart();
