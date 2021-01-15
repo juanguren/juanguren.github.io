@@ -30,8 +30,13 @@ header{
     margin-top: 2em;
 }
 
-.main-container p{
+.main-greet h1{
+    font-size: 50px;
+}
+
+.main-greet p{
     margin-top: 2em;
+    font-size: 20px;
 }
 
 .main-buttons{
@@ -39,11 +44,11 @@ header{
 }
 
 .main-buttons button{
-    padding: 12px;
+    padding: 15px;
     width: 12em;
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .main-buttons button:hover{
