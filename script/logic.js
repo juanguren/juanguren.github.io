@@ -13,7 +13,16 @@ const wordChangeinStart = () =>{
             counter = 0;
         }
         domSpace.textContent = wordArray[counter];
-    }, 2500);
+    }, 2200);
 }
 
 //wordChangeinStart();
+
+const emailButton = () => {
+    const email_button = document.getElementById("email-button");
+    email_button.addEventListener("click", () =>{
+        location.href = 'mailto:juan_fe_7@live.com';
+    });
+};
+
+emailButton();
