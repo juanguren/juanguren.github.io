@@ -4,7 +4,11 @@
     padding: 0;
 }
 
-header{
+h2{
+    font-size: 30px;
+}
+
+nav{
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -15,7 +19,7 @@ header{
 
 .menu ul{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
     list-style: none;
 }
@@ -31,7 +35,7 @@ header{
 }
 
 .main-container{
-    margin: 3em 0 0 5em;
+    margin: 3em 5em 0 5em;
 }
 
 .main-greet h1{
@@ -41,6 +45,7 @@ header{
 .main-greet p{
     margin-top: 2em;
     font-size: 20px;
+    max-width: 550px;
 }
 
 .main-buttons{
@@ -66,3 +71,22 @@ header{
     margin-left: 1.5em;
 }
 
+/* # ABOUT ME */
+
+.about{
+    margin-top: 10em;
+}
+
+.about-text{
+    margin-top: 2.5em;
+    max-width: 550px;
+}
+
+.about-text p{
+    font-size: 20px;
+}
+
+.about-text p a{
+    text-decoration: none;
+    font-weight: bold;
+}
