@@ -17,3 +17,12 @@ const wordChangeinStart = () =>{
 }
 
 //wordChangeinStart();
+
+const emailButton = () => {
+    const email_button = document.getElementById("email-button");
+    email_button.addEventListener("click", () =>{
+        location.href = 'mailto:juan_fe_7@live.com';
+    });
+};
+
+emailButton();
