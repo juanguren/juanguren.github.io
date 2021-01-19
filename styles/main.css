@@ -77,6 +77,11 @@ nav{
     margin-top: 10em;
 }
 
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .about-text{
     margin-top: 2.5em;
     max-width: 550px;
@@ -116,4 +121,10 @@ nav{
 
 .fa-github{
     color: black;
+}
+
+.about img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
