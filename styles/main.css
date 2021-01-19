@@ -93,11 +93,27 @@ nav{
 
 .about-social{
     text-align: center;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .fa{
-    padding: 5px;
-    width: 30px;    
+    margin: 12px;
+    width: 50px;
     text-decoration: none;
+}
+
+.fa-twitter {
+	color: #1DA1F3;
+}
+
+.fa-linkedin {
+	color: #0274B3;
+}
+
+.fa-medium {
+	color: #14C767;
+}
+
+.fa-github{
+    color: black;
 }
