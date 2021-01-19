@@ -90,3 +90,14 @@ nav{
     text-decoration: none;
     font-weight: bold;
 }
+
+.about-social{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.fa{
+    padding: 5px;
+    width: 30px;    
+    text-decoration: none;
+}
