@@ -84,11 +84,12 @@ nav{
 
 .about-text{
     margin-top: 2.5em;
-    max-width: 550px;
+    max-width: 600px;
 }
 
 .about-text p{
     font-size: 20px;
+    text-align: justify;
 }
 
 .about-text p a{
@@ -98,7 +99,7 @@ nav{
 
 .about-social{
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .fa{
@@ -134,11 +135,14 @@ nav{
     margin-top: 10em;
 }
 
-.projects-grid{
+.proj{
     margin-top: 3em;
+}
+
+.project-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    padding: 4em;
 }
 
 .project-stack{
@@ -148,6 +152,11 @@ nav{
     margin: 0;
 }
 
+.project-image {
+    max-width: 600px;
+    height: 100%;
+    width: 100%;
+}
 
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
