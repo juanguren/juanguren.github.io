@@ -1,7 +1,5 @@
 # juanguren.github.io
 
-<h2>I hereby begin creation of my portfolio</h2>
-
 ## Technologies and tools I used:
 - HTML5
 - CSS3
