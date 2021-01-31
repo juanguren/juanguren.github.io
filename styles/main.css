@@ -46,6 +46,7 @@ nav{
     margin-top: 2em;
     font-size: 20px;
     max-width: 550px;
+    text-align: justify;
 }
 
 .main-buttons{
@@ -142,7 +143,23 @@ nav{
 .project-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 4em;
+    margin-top: 4em;
+}
+
+.project-description{
+    text-align: end;
+}
+
+.project-description h3{
+    font-size: 25px;
+}
+
+.project-description p{
+    margin-top: 1.5em;
+}
+
+.project-description ul{
+    margin-top: 1.5em;
 }
 
 .project-stack{
@@ -150,10 +167,28 @@ nav{
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
+    justify-content: flex-end;
+}
+
+.project-stack li{
+    font-weight: bold;
+}
+
+.link-box{
+    margin-top: 2em;
+}
+
+.view-link{
+    width: 25px;
+}
+
+.git{
+    width: 26px;
+    object-position: bottom;
 }
 
 .project-image {
-    max-width: 600px;
+    max-width: 800px;
     height: 100%;
     width: 100%;
 }
