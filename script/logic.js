@@ -19,10 +19,12 @@ const wordChangeinStart = () =>{
 //wordChangeinStart();
 
 const emailButton = () => {
-    const email_button = document.getElementById("email-button");
-    email_button.addEventListener("click", () =>{
-        location.href = 'mailto:juan_fe_7@live.com';
-    });
+    const email_button = document.querySelectorAll(".email-button");
+    email_button.forEach((btn) => {
+        btn.addEventListener("click", () =>{
+            location.href = 'mailto:juan_fe_7@live.com';
+        });
+    })
 };
 
 emailButton();
