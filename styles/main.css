@@ -85,13 +85,15 @@ nav{
 .about-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "about-text about-image";
 }
 
 .about-text{
     margin-top: 2.5em;
     max-width: 600px;
+    grid-area: "about-text";
 }
-
 .about-text p{
     font-size: 20px;
     text-align: justify;
@@ -100,6 +102,14 @@ nav{
 .about-text p a{
     text-decoration: none;
     font-weight: bold;
+}
+
+.about-grid img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    justify-self: center;
+    grid-area: "about-image";
 }
 
 .about-social{
@@ -127,13 +137,6 @@ nav{
 
 .fa-github{
     color: black;
-}
-
-.about-grid img{
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    justify-self: center;
 }
 
 .projects{
@@ -249,5 +252,26 @@ footer h4 img{
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
 @media all and (min-width: 768px) and (max-width: 1024px) {}
-@media all and (min-width: 480px) and (max-width: 768px) {}
-@media all and (max-width: 480px) {}
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .main-container{
+        margin: 3em 2em 0 2em;
+    }
+}
+@media all and (max-width: 480px) {
+    .main-container{
+        margin: 0px;
+        margin: 3em 0em 0em 0em;
+    }
+    .main-greet h1{
+        font-size: 9vw;
+    }
+    .main-greet p{
+        max-width: 650px;
+    }
+
+    .about-grid{
+        grid-template-areas: 
+        "about-text"
+        "about-image";
+    }
+}
