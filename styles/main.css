@@ -83,10 +83,8 @@ nav{
 }
 
 .about-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-        "about-text about-image";
+    display: flex;
+    flex-direction: row;
 }
 
 .about-text{
@@ -105,16 +103,11 @@ nav{
 }
 
 .about-grid img{
-    width: 100%;
+    width: 50vw;
     max-width: 350px;
-    height: auto;
-    justify-self: center;
+    max-height: 40vw;
     grid-area: "about-image";
-}
-
-.about-social{
-    text-align: center;
-    margin-top: 1em;
+    align-self: center;
 }
 
 .fa{
@@ -256,6 +249,9 @@ footer h4 img{
     .main-container{
         margin: 3em 2em 0 2em;
     }
+    .about-grid img{
+        display: none;
+    }
 }
 @media all and (max-width: 480px) {
     .main-container{
@@ -268,10 +264,7 @@ footer h4 img{
     .main-greet p{
         max-width: 650px;
     }
-
-    .about-grid{
-        grid-template-areas: 
-        "about-text"
-        "about-image";
+    .about-grid img{
+        display: none;
     }
 }
