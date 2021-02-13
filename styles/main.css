@@ -11,10 +11,14 @@ h2{
 nav{
     display: grid;
     grid-template-columns: auto auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .menu{
     justify-self: end;
+    margin-right: 1em;
 }
 
 .menu ul{
@@ -40,6 +44,10 @@ nav{
 
 .main-container{
     margin: 3em 5em 0 5em;
+}
+
+.main-greet{
+    margin-top: 6em;
 }
 
 .main-greet h1{
@@ -252,6 +260,10 @@ footer h4 img{
     .about-grid img{
         display: none;
     }
+    .project-grid{
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media all and (max-width: 480px) {
     .main-container{
@@ -266,5 +278,9 @@ footer h4 img{
     }
     .about-grid img{
         display: none;
+    }
+    .project-grid{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
