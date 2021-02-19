@@ -16,10 +16,11 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 5px;
 }
 
 .header-logo{
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .menu{
@@ -46,7 +47,7 @@ nav{
 }
 
 .menu ul li a:hover{
-    color: royalblue;
+    color: teal;
 }
 
 .main-container{
@@ -82,7 +83,7 @@ nav{
 }
 
 .main-buttons button:hover{
-    background: royalblue;
+    background: teal;
     text-decoration: whitesmoke;
     color: whitesmoke;
 }
@@ -232,7 +233,7 @@ nav{
 }
 
 .contact button:hover{
-    background: royalblue;
+    background: teal;
     text-decoration: whitesmoke;
     color: whitesmoke;
 }
@@ -261,6 +262,31 @@ footer h4 img{
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
 @media all and (min-width: 768px) and (max-width: 1024px) {}
 @media all and (min-width: 480px) and (max-width: 768px) {
+    nav{
+        background-color: transparent;
+    }
+    .menu{
+        display: none;
+        margin: 0%;
+        background-color: teal;
+    }
+    .menu ul{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        padding: 0 7em 100% 6em;
+    }
+    .menu ul li{
+        margin-top: 4em;
+    }
+
+    .menu ul li a{
+        font-size: 25px;
+    }
+    .menu ul li a:hover{
+        color: white;
+    }
     .main-container{
         margin: 3em 2em 0 2em;
     }
@@ -273,6 +299,30 @@ footer h4 img{
     }
 }
 @media all and (max-width: 480px) {
+    nav{
+        background-color: transparent;
+    }
+    .menu{
+        display: none;
+        margin: 0%;
+        background-color: teal;
+        padding: 0 0 20em 4em;
+    }
+    .menu ul{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+    .menu ul li{
+        margin-top: 4em;
+    }
+    .menu ul li a{
+        font-size: 25px;
+    }
+    .menu ul li a:hover{
+        color: white;
+    }
     .main-container{
         margin: 0px;
         margin: 3em 0em 0em 0em;
