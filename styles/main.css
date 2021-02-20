@@ -12,7 +12,7 @@ nav{
     margin: 0px;
     background-color: white;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     position: fixed;
     top: 0;
     width: 100%;
@@ -59,7 +59,7 @@ nav{
 }
 
 .main-greet h1{
-    font-size: 50px;
+    font-size: clamp(40px, 8vw, 80px);
 }
 
 .main-greet p{
@@ -215,7 +215,7 @@ nav{
 }
 
 .contact h1{
-    font-size: 50px;
+    font-size: clamp(40px, 5vw, 60px);
 }
 
 .contact p{
@@ -264,6 +264,19 @@ footer h4 img{
 @media all and (min-width: 480px) and (max-width: 768px) {
     nav{
         background-color: transparent;
+        grid-template-columns: auto auto;
+    }
+    #hamburguer-icon{
+        justify-self: end;
+        margin-right: 1.5em;
+        margin-top: 1em;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
     }
     .menu{
         display: none;
@@ -280,7 +293,6 @@ footer h4 img{
     .menu ul li{
         margin-top: 4em;
     }
-
     .menu ul li a{
         font-size: 25px;
     }
@@ -301,6 +313,19 @@ footer h4 img{
 @media all and (max-width: 480px) {
     nav{
         background-color: transparent;
+        grid-template-columns: auto auto;
+    }
+    #hamburguer-icon{
+        justify-self: end;
+        margin-right: 1.5em;
+        margin-top: 1em;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
     }
     .menu{
         display: none;
@@ -326,9 +351,6 @@ footer h4 img{
     .main-container{
         margin: 0px;
         margin: 3em 0em 0em 0em;
-    }
-    .main-greet h1{
-        font-size: 9vw;
     }
     .main-greet p{
         max-width: 650px;
