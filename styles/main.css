@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:root{
+    --main-color: teal;
+}
+
 h2{
     font-size: 30px;
 }
@@ -47,7 +51,7 @@ nav{
 }
 
 .menu ul li a:hover{
-    color: teal;
+    color: var(--main-color);
 }
 
 .main-container{
@@ -83,7 +87,7 @@ nav{
 }
 
 .main-buttons button:hover{
-    background: teal;
+    background: var(--main-color);
     text-decoration: whitesmoke;
     color: whitesmoke;
 }
@@ -233,7 +237,7 @@ nav{
 }
 
 .contact button:hover{
-    background: teal;
+    background: var(--main-color);
     text-decoration: whitesmoke;
     color: whitesmoke;
 }
@@ -261,7 +265,7 @@ footer h4 img{
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
 @media all and (min-width: 768px) and (max-width: 1024px) {}
-@media all and (min-width: 480px) and (max-width: 768px) {
+@media all and (min-width: 0px) and (max-width: 768px) {
     nav{
         background-color: transparent;
         grid-template-columns: auto auto;
@@ -270,6 +274,7 @@ footer h4 img{
         justify-self: end;
         margin-right: 1.5em;
         margin-top: 1em;
+        cursor: pointer;
     }
     .bar1, .bar2, .bar3 {
         width: 35px;
@@ -281,7 +286,7 @@ footer h4 img{
     .menu{
         display: none;
         margin: 0%;
-        background-color: teal;
+        background-color: var(--main-color);
     }
     .menu ul{
         margin: 0;
@@ -319,6 +324,7 @@ footer h4 img{
         justify-self: end;
         margin-right: 1.5em;
         margin-top: 1em;
+        cursor: pointer;
     }
     .bar1, .bar2, .bar3 {
         width: 35px;
@@ -330,7 +336,7 @@ footer h4 img{
     .menu{
         display: none;
         margin: 0%;
-        background-color: teal;
+        background-color: var(--main-color);
         padding: 0 0 20em 4em;
     }
     .menu ul{
