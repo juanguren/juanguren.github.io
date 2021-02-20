@@ -64,7 +64,7 @@ nav{
 }
 
 .main-greet h1{
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: 50px;
 }
 
 .main-greet p{
@@ -362,6 +362,10 @@ footer h4 img{
     .main-container{
         margin: 0px;
         margin: 3em 0em 0em 0em;
+    }
+    .main-greet h1{
+        transition: 0.5s;
+        font-size: 35px;
     }
     .main-greet p{
         max-width: 650px;
