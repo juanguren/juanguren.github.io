@@ -28,6 +28,7 @@ nav{
 }
 
 .menu{
+    display: block;
     justify-self: end;
     margin-top: 1em;
     margin-right: 1em;
@@ -262,10 +263,9 @@ footer h4 img{
     max-height: 22px;
 }
 
-
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
 @media all and (min-width: 768px) and (max-width: 1024px) {}
-@media all and (min-width: 0px) and (max-width: 768px) {
+@media all and (min-width: 480px) and (max-width: 768px) {
     nav{
         background-color: transparent;
         grid-template-columns: auto auto;
@@ -275,6 +275,7 @@ footer h4 img{
         margin-right: 1.5em;
         margin-top: 1em;
         cursor: pointer;
+        z-index: 100;
     }
     .bar1, .bar2, .bar3 {
         width: 35px;
@@ -286,13 +287,14 @@ footer h4 img{
     .menu{
         display: none;
         margin: 0%;
+        position: absolute;
         background-color: var(--main-color);
     }
     .menu ul{
         margin: 0;
         display: flex;
         flex-direction: column;
-        margin-top: 2em;
+        margin-top: 5em;
         padding: 0 7em 100% 6em;
     }
     .menu ul li{
@@ -325,6 +327,7 @@ footer h4 img{
         margin-right: 1.5em;
         margin-top: 1em;
         cursor: pointer;
+        z-index: 100;
     }
     .bar1, .bar2, .bar3 {
         width: 35px;
@@ -338,15 +341,17 @@ footer h4 img{
         margin: 0%;
         background-color: var(--main-color);
         padding: 0 0 20em 4em;
+        position: absolute;
     }
     .menu ul{
         margin: 0;
         display: flex;
         flex-direction: column;
-        margin-top: 2em;
+        margin-top: 5em;
     }
     .menu ul li{
         margin-top: 4em;
+        margin-right: 1em;
     }
     .menu ul li a{
         font-size: 25px;
