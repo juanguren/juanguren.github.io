@@ -1,4 +1,4 @@
-
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js
 const responsiveNavBar = () =>{
     const nav = document.getElementById('hamburguer-icon');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -43,11 +43,11 @@ const emailButton = () => {
 emailButton();
 
 const fixMobileNav = () =>{
-    const isDesktop = window.matchMedia('(min-width: 768px) and (max-width: 1024px)');
+    const isDesktop = window.matchMedia('(min-width: 768px) and (max-width: 2000px)');
     const mobileNav = document.getElementById('mobile-menu');
     isDesktop.addEventListener('change', (e) =>{
         if (e.matches) {
-            mobileNav.style.display = 'none';   
+            mobileNav.style.display = 'none'; 
         }
     });
 }
