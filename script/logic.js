@@ -41,3 +41,16 @@ const emailButton = () => {
 };
 
 emailButton();
+
+const fixMobileNav = () =>{
+    const isDesktop = window.matchMedia('(min-width: 768px) and (max-width: 1024px)');
+    const mobileNav = document.getElementById('mobile-menu');
+    isDesktop.addEventListener('change', (e) =>{
+        if (e.matches) {
+            mobileNav.style.display = 'none';   
+        }
+    });
+}
+
+fixMobileNav();
+
