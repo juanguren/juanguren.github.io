@@ -1,4 +1,4 @@
-//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js
+
 const responsiveNavBar = () =>{
     const nav = document.getElementById('hamburguer-icon');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -16,7 +16,7 @@ const responsiveNavBar = () =>{
         bar2.classList.toggle('disappear');
         bar3.classList.toggle('transformBar3');
     });
-}
+};
 
 responsiveNavBar();
 
@@ -35,7 +35,7 @@ const wordChangeinStart = () =>{
         }
         domSpace.textContent = wordArray[counter];
     }, 2200);
-}
+};
 
 //wordChangeinStart();
 
@@ -58,7 +58,7 @@ const fixMobileNav = () =>{
             mobileNav.style.display = 'none'; 
         }
     });
-}
+};
 
 fixMobileNav();
 
