@@ -34,10 +34,16 @@ const wordChangeinStart = () =>{
             counter = 0;
         }
         domSpace.textContent = wordArray[counter];
-    }, 2200);
+        wordArray.forEach(() => {
+            domSpace.classList.add('aboutWord')
+            setTimeout(() => {
+                domSpace.classList.remove('aboutWord')
+            }, 1000);
+        })
+    }, 2500);
 };
 
-//wordChangeinStart();
+wordChangeinStart();
 
 const emailButton = () => {
     const email_button = document.querySelectorAll(".email-button");

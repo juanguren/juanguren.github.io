@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --main-color: teal;
 }
@@ -265,6 +269,19 @@ footer h4 img{
 
 /* ====== Special classes for responsivenesss =========   */
 
+.aboutWord{
+    animation: change;
+    animation-duration: 0.5s;
+}
+
+@keyframes change{
+    0% { opacity: 0; }
+    25% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+    75% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
 .transformBar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-8.5px, 6px);
@@ -305,6 +322,7 @@ footer h4 img{
         margin: 0%;
         position: absolute;
         background-color: var(--main-color);
+        z-index: 50;
     }
     .menu ul{
         margin: 0;
