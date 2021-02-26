@@ -40,7 +40,7 @@ const wordChangeinStart = () =>{
                 domSpace.classList.remove('aboutWord')
             }, 1000);
         })
-    }, 2500);
+    }, 2200);
 };
 
 wordChangeinStart();
