@@ -60,6 +60,7 @@ nav{
     text-decoration: none;
     color: black;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .menu ul li a:hover{
@@ -81,9 +82,8 @@ nav{
 
 .main-greet p{
     margin-top: 2em;
-    font-size: 20px;
-    max-width: 550px;
-    text-align: justify;
+    font-size: 19px;
+    max-width: 570px;
 }
 
 .main-buttons{
@@ -127,7 +127,7 @@ nav{
     grid-area: "about-text";
 }
 .about-text p{
-    font-size: 21px;
+    font-size: 19px;
     text-align: justify;
 }
 
@@ -140,8 +140,7 @@ nav{
     width: 50vw;
     max-width: 350px;
     max-height: 40vw;
-    grid-area: "about-image";
-    align-self: center;
+    margin-left: 5em;
 }
 
 .fa{
@@ -227,9 +226,13 @@ nav{
     width: 100%;
 }
 
+/* CONTACT */
+
 .contact{
     margin-top: 12em;
     text-align: center;
+    position: relative;
+    top: 3em;
 }
 
 .contact h1{
