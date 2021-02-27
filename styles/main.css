@@ -97,12 +97,7 @@ nav{
     border: none;
     cursor: pointer;
     font-size: 15px;
-    background-color: silver;
-}
-
-.main-buttons button:hover{
-    background: var(--main-color);
-    text-decoration: whitesmoke;
+    background-color: var(--main-color);
     color: whitesmoke;
 }
 
@@ -251,12 +246,7 @@ nav{
     border: none;
     cursor: pointer;
     font-size: 15px;
-    background-color: silver;
-}
-
-.contact button:hover{
-    background: var(--main-color);
-    text-decoration: whitesmoke;
+    background-color: var(--main-color);
     color: whitesmoke;
 }
 
