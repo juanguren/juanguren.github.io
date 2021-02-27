@@ -97,6 +97,7 @@ nav{
     border: none;
     cursor: pointer;
     font-size: 15px;
+    background-color: silver;
 }
 
 .main-buttons button:hover{
@@ -247,6 +248,7 @@ nav{
     border: none;
     cursor: pointer;
     font-size: 15px;
+    background-color: silver;
 }
 
 .contact button:hover{
@@ -279,7 +281,7 @@ footer h4 img{
 
 .aboutWord{
     animation: change;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
 }
 
 @keyframes change{
