@@ -357,6 +357,12 @@ footer h4 img{
     }
     .contact{
         z-index: -1;
+        margin-top: 5em;
+        position: relative;
+        top: 0em;
+    }
+    .contact, footer{
+        margin-top: 15em;
     }
 }
 @media all and (max-width: 480px) {
@@ -424,8 +430,14 @@ footer h4 img{
         flex-wrap: wrap;
     }
     .contact{
-        margin-top: 5em;
-        margin-bottom: 1em;
         z-index: -1;
+        position: relative;
+        top: 0em;
+    }
+    .contact, footer{
+        margin-top: 14em;
+    }
+    footer{
+        margin-top: 15em;
     }
 }
