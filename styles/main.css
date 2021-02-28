@@ -345,6 +345,9 @@ footer h4 img{
     .main-container{
         margin: 3em 2em 0 2em;
     }
+    .main-greet{
+        margin-top: 7.5em;
+    }
     .about-grid img{
         display: none;
     }
@@ -402,6 +405,9 @@ footer h4 img{
     .main-container{
         margin: 0px;
         margin: 3em 0em 0em 0em;
+    }
+    .main-greet{
+        margin-top: 7.5em;
     }
     .main-greet h1{
         transition: 0.5s;
