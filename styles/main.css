@@ -1,443 +1,467 @@
 * {
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-:root{
-    --main-color: teal;
+:root {
+  --main-color: teal;
 }
 
-h2{
-    font-size: 30px;
+h2 {
+  font-size: 30px;
 }
 
-nav{
-    margin: 0px;
-    background-color: white;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1px;
+nav {
+  margin: 0px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1px;
 }
 
-.header-logo h2 a{
-    font-size: 40px;
-    color: crimson;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+.header-logo h2 a {
+  font-size: 40px;
+  color: crimson;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
 
-.menu{
-    display: block;
-    justify-self: end;
-    margin-top: 1em;
-    margin-right: 1em;
+.menu {
+  display: block;
+  justify-self: end;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
-.menu ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    list-style: none;
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  list-style: none;
 }
 
-.menu ul li{
-    padding-left: 1.5em;
+.menu ul li {
+  padding-left: 1.5em;
 }
 
-.menu ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: 500;
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.menu ul li a:hover{
-    color: var(--main-color);
+.menu ul li a:hover {
+  color: var(--main-color);
 }
 
-.main-container{
-    margin: 7em 5em 0 5em;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.main-container {
+  margin: 7em 5em 0 5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.main-greet{
-    margin-top: 6em;
+.main-greet {
+  margin-top: 6em;
 }
 
-.main-greet h1{
-    font-size: 50px;
+.main-greet h1 {
+  font-size: 50px;
 }
 
-.main-greet p{
-    margin-top: 2em;
-    font-size: 19px;
-    max-width: 570px;
+.main-greet p {
+  margin-top: 2em;
+  font-size: 19px;
+  max-width: 570px;
 }
 
-.main-buttons{
-    margin-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
+.main-buttons {
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.main-buttons button{
-    padding: 15px;
-    width: 12em;
-    border: none;
-    cursor: pointer;
-    font-size: 15px;
-    background-color: var(--main-color);
-    color: whitesmoke;
+.main-buttons button {
+  padding: 15px;
+  width: 12em;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: var(--main-color);
+  color: whitesmoke;
 }
 
-.main-buttons button:nth-child(2){
-    margin-left: 1.5em;
+.main-buttons button:nth-child(2) {
+  margin-left: 1.5em;
 }
 
 /* # ABOUT ME */
 
-.about{
-    margin-top: 10em;
+.about {
+  margin-top: 10em;
 }
 
-.about-grid{
-    display: flex;
-    flex-direction: row;
+.about-grid {
+  display: flex;
+  flex-direction: row;
 }
 
-.about-text{
-    margin-top: 2.5em;
-    max-width: 600px;
-    grid-area: "about-text";
+.about-text {
+  margin-top: 2.5em;
+  max-width: 600px;
+  grid-area: 'about-text';
 }
-.about-text p{
-    font-size: 19px;
-    text-align: justify;
-}
-
-.about-text p a{
-    text-decoration: none;
-    font-weight: bold;
+.about-text p {
+  font-size: 19px;
+  text-align: justify;
 }
 
-.about-grid img{
-    width: 50vw;
-    max-width: 350px;
-    max-height: 40vw;
-    margin-left: 5em;
+.about-text p a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.fa{
-    margin: 12px;
-    width: 50px;
-    text-decoration: none;
+.about-grid img {
+  width: 50vw;
+  max-width: 350px;
+  max-height: 40vw;
+  margin-left: 5em;
+}
+
+.fa {
+  margin: 12px;
+  width: 50px;
+  text-decoration: none;
 }
 
 .fa-twitter {
-	color: #1DA1F3;
+  color: #1da1f3;
 }
 
 .fa-linkedin {
-	color: #0274B3;
+  color: #0274b3;
 }
 
 .fa-medium {
-	color: #14C767;
+  color: #14c767;
 }
 
-.fa-github{
-    color: black;
+.fa-github {
+  color: black;
 }
 
-.projects{
-    margin-top: 10em;
+.projects {
+  margin-top: 10em;
 }
 
-.proj{
-    margin-top: 3em;
+.proj {
+  margin-top: 3em;
 }
 
-.project-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 4em;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4em;
 }
 
-.project-description{
-    text-align: end;
+.project-description {
+  text-align: end;
 }
 
-.project-description h3{
-    font-size: 25px;
+.project-description h3 {
+  font-size: 25px;
 }
 
-.project-description p{
-    margin-top: 1.5em;
+.project-description p {
+  margin-top: 1.5em;
 }
 
-.project-description ul{
-    margin-top: 1.5em;
+.project-description ul {
+  margin-top: 1.5em;
 }
 
-.project-stack{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0;
-    justify-content: flex-end;
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  justify-content: flex-end;
 }
 
-.project-stack li{
-    font-weight: bold;
+.project-stack li {
+  font-weight: bold;
 }
 
-.link-box{
-    margin-top: 2em;
+.link-box {
+  margin-top: 2em;
 }
 
-.view-link{
-    width: 25px;
+.view-link {
+  width: 25px;
 }
 
-.git{
-    width: 26px;
-    object-position: bottom;
+.git {
+  width: 26px;
+  object-position: bottom;
+}
+
+.eth {
+  width: 20px;
+  height: 30px;
 }
 
 .project-image {
-    max-width: 800px;
-    height: 100%;
-    width: 100%;
+  max-width: 800px;
+  height: 100%;
+  width: 100%;
 }
 
 /* CONTACT */
 
-.contact{
-    margin-top: 12em;
-    text-align: center;
-    position: relative;
-    top: 3em;
+.contact {
+  margin-top: 12em;
+  text-align: center;
+  position: relative;
+  top: 3em;
 }
 
-.contact h1{
-    font-size: clamp(40px, 5vw, 60px);
+.contact h1 {
+  font-size: clamp(40px, 5vw, 60px);
 }
 
-.contact p{
-    margin-top: 2em;
-    font-size: 20px;
+.contact p {
+  margin-top: 2em;
+  font-size: 20px;
 }
 
-.contact button{
-    margin-top: 3em;
-    padding: 15px;
-    width: 12em;
-    border: none;
-    cursor: pointer;
-    font-size: 15px;
-    background-color: var(--main-color);
-    color: whitesmoke;
+.contact button {
+  margin-top: 3em;
+  padding: 15px;
+  width: 12em;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: var(--main-color);
+  color: whitesmoke;
 }
 
-footer{
-    margin-top: 10em;
-    text-align: center;
+footer {
+  margin-top: 10em;
+  text-align: center;
 }
 
-.footer-icons a{
-    margin: 0;
-    margin-left: 5px;
+.footer-icons a {
+  margin: 0;
+  margin-left: 5px;
 }
 
-footer h4{
-    margin-top: 2em;
+footer h4 {
+  margin-top: 2em;
 }
 
-footer h4 img{
-    vertical-align: middle;
-    max-width: 22px;
-    max-height: 22px;
+footer h4 img {
+  vertical-align: middle;
+  max-width: 22px;
+  max-height: 22px;
 }
 
 /* ====== Special classes for responsivenesss =========   */
 
-.aboutWord{
-    animation: change;
-    animation-duration: 0.3s;
+.aboutWord {
+  animation: change;
+  animation-duration: 0.3s;
 }
 
-@keyframes change{
-    0% { opacity: 0; }
-    25% { opacity: 0.3; }
-    50% { opacity: 0.5; }
-    75% { opacity: 0.7; }
-    100% { opacity: 1; }
+@keyframes change {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .transformBar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-8.5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-8.5px, 6px);
 }
 
-.disappear{
-    opacity: 0;
+.disappear {
+  opacity: 0;
 }
 
 .transformBar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {}
-@media all and (min-width: 768px) and (max-width: 1024px) {}
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
 @media all and (min-width: 480px) and (max-width: 768px) {
-    nav{
-        background-color: white;
-        height: 10%;
-        grid-template-columns: auto auto;
-    }
-    #hamburguer-icon{
-        justify-self: end;
-        margin-right: 1.5em;
-        margin-top: 1em;
-        cursor: pointer;
-        z-index: 100;
-    }
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-    .menu{
-        display: none;
-        margin: 0%;
-        position: absolute;
-        background-color: var(--main-color);
-        padding: 0 0 50em 0;
-        z-index: 50;
-    }
-    .menu ul{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        margin-top: 5em;
-        padding: 0 7em 100% 6em;
-    }
-    .menu ul li{
-        margin-top: 4em;
-    }
-    .menu ul li a{
-        font-size: 25px;
-    }
-    .menu ul li a:hover{
-        color: white;
-    }
-    .main-container{
-        margin: 3em 2em 0 2em;
-    }
-    .main-greet{
-        margin-top: 7.5em;
-    }
-    .about-grid img{
-        display: none;
-    }
-    .project-grid{
-        display: flex;
-        flex-direction: column;
-    }
-    .contact{
-        z-index: -1;
-        margin-top: 5em;
-        position: relative;
-        top: 0em;
-    }
-    .contact, footer{
-        margin-top: 15em;
-    }
+  nav {
+    background-color: white;
+    height: 10%;
+    grid-template-columns: auto auto;
+  }
+  #hamburguer-icon {
+    justify-self: end;
+    margin-right: 1.5em;
+    margin-top: 1em;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .menu {
+    display: none;
+    margin: 0%;
+    position: absolute;
+    background-color: var(--main-color);
+    padding: 0 0 50em 0;
+    z-index: 50;
+  }
+  .menu ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    padding: 0 7em 100% 6em;
+  }
+  .menu ul li {
+    margin-top: 4em;
+  }
+  .menu ul li a {
+    font-size: 25px;
+  }
+  .menu ul li a:hover {
+    color: white;
+  }
+  .main-container {
+    margin: 3em 2em 0 2em;
+  }
+  .main-greet {
+    margin-top: 7.5em;
+  }
+  .about-grid img {
+    display: none;
+  }
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    z-index: -1;
+    margin-top: 5em;
+    position: relative;
+    top: 0em;
+  }
+  .contact,
+  footer {
+    margin-top: 15em;
+  }
 }
 @media all and (max-width: 480px) {
-    nav{
-        background-color: white;
-        height: 10%;
-        grid-template-columns: auto auto;
-    }
-    #hamburguer-icon{
-        justify-self: end;
-        margin-right: 1.5em;
-        margin-top: 1em;
-        cursor: pointer;
-        z-index: 100;
-    }
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-    .menu{
-        display: none;
-        margin: 0%;
-        background-color: var(--main-color);
-        padding: 0 0 50em 4em;
-        position: absolute;
-    }
-    .menu ul{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        margin-top: 5em;
-    }
-    .menu ul li{
-        margin-top: 4em;
-        margin-right: 1em;
-    }
-    .menu ul li a{
-        font-size: 25px;
-    }
-    .menu ul li a:hover{
-        color: white;
-    }
-    .main-container{
-        margin: 0px;
-        margin: 3em 0em 0em 0em;
-    }
-    .main-greet{
-        margin-top: 7.5em;
-    }
-    .main-greet h1{
-        transition: 0.5s;
-        font-size: 35px;
-    }
-    .main-greet p{
-        max-width: 650px;
-    }
-    .about-grid img{
-        display: none;
-    }
-    .project-grid{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .contact{
-        z-index: -1;
-        position: relative;
-        top: 0em;
-    }
-    .contact, footer{
-        margin-top: 14em;
-    }
-    footer{
-        margin-top: 15em;
-    }
+  nav {
+    background-color: white;
+    height: 10%;
+    grid-template-columns: auto auto;
+  }
+  #hamburguer-icon {
+    justify-self: end;
+    margin-right: 1.5em;
+    margin-top: 1em;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .menu {
+    display: none;
+    margin: 0%;
+    background-color: var(--main-color);
+    padding: 0 0 50em 4em;
+    position: absolute;
+  }
+  .menu ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+  .menu ul li {
+    margin-top: 4em;
+    margin-right: 1em;
+  }
+  .menu ul li a {
+    font-size: 25px;
+  }
+  .menu ul li a:hover {
+    color: white;
+  }
+  .main-container {
+    margin: 0px;
+    margin: 3em 0em 0em 0em;
+  }
+  .main-greet {
+    margin-top: 7.5em;
+  }
+  .main-greet h1 {
+    transition: 0.5s;
+    font-size: 35px;
+  }
+  .main-greet p {
+    max-width: 650px;
+  }
+  .about-grid img {
+    display: none;
+  }
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact {
+    z-index: -1;
+    position: relative;
+    top: 0em;
+  }
+  .contact,
+  footer {
+    margin-top: 14em;
+  }
+  footer {
+    margin-top: 15em;
+  }
 }
