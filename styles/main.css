@@ -208,6 +208,11 @@ nav {
   width: 25px;
 }
 
+.instagram {
+  width: 40px;
+  object-position: bottom;
+}
+
 .git {
   width: 26px;
   object-position: bottom;
@@ -220,6 +225,12 @@ nav {
 
 .project-image {
   max-width: 800px;
+  height: 100%;
+  width: 100%;
+}
+
+.project-image-kindo {
+  max-width: 750px;
   height: 100%;
   width: 100%;
 }
