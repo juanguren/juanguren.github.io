@@ -24,7 +24,7 @@ responsiveNavBar();
 const wordChangeinStart = () => {
   let counter = 0;
   let domSpace = document.getElementById("for-array");
-  const wordArray = ["impact.", "good.", "fun."];
+  const wordArray = ["impact.", "good.", "purpose."];
 
   setInterval(() => {
     counter++;
