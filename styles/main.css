@@ -10,6 +10,14 @@ html {
 
 :root {
   --main-color: teal;
+  --bg-color: #fbfaf6;
+  /* same colour as --bg-color at 72%, so the vines and blobs read
+     through the bar while the links stay legible */
+  --bg-frost: rgba(251, 250, 246, 0.72);
+}
+
+body {
+  background-color: var(--bg-color);
 }
 
 h2 {
@@ -18,7 +26,10 @@ h2 {
 
 nav {
   margin: 0px;
-  background-color: white;
+  background-color: var(--bg-frost);
+  backdrop-filter: blur(9px) saturate(115%);
+  -webkit-backdrop-filter: blur(9px) saturate(115%);
+  z-index: 10;
   display: grid;
   grid-template-columns: auto auto auto;
   position: fixed;
@@ -71,16 +82,21 @@ nav {
 
 .main-greet {
   margin-top: 6em;
+  position: relative;
 }
 
 .main-greet h1 {
   font-size: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .main-greet p {
   margin-top: 2em;
   font-size: 19px;
   max-width: 570px;
+  position: relative;
+  z-index: 1;
 }
 
 .main-buttons {
@@ -112,28 +128,29 @@ nav {
 .about-grid {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .about-text {
   margin-top: 2.5em;
+  margin-left: 0;
   max-width: 600px;
   grid-area: "about-text";
+  position: relative;
+  z-index: 1;
 }
 .about-text p {
   font-size: 19px;
   text-align: justify;
+  margin-left: 0;
 }
 
+/* the global `* { margin: 5px }` would otherwise open a gap on each side
+   of an inline link, detaching it from the surrounding words */
 .about-text p a {
   text-decoration: none;
   font-weight: bold;
-}
-
-.about-grid img {
-  width: 50vw;
-  max-width: 350px;
-  max-height: 40vw;
-  margin-left: 5em;
+  margin: 0;
 }
 
 .fa {
@@ -284,6 +301,126 @@ footer h4 img {
   max-height: 22px;
 }
 
+/* ====== Nature line-art decorations ====== */
+
+.deco {
+  position: absolute;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* topographic contours ringing the hero title */
+.deco-contours {
+  top: -2.5em;
+  left: -3.5em;
+  width: 620px;
+  max-width: 70vw;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* two vines hanging on the hero's right */
+.deco-vine {
+  top: -7em;
+  z-index: 0;
+  animation: sway 14s ease-in-out infinite alternate;
+  transform-origin: top center;
+}
+
+/* fixed offsets, not percentages: percentages make the two vines
+   converge and collide as the container narrows */
+.deco-vine-1 {
+  right: 130px;
+  width: 120px;
+  opacity: 0.75;
+}
+
+.deco-vine-2 {
+  right: 20px;
+  width: 96px;
+  opacity: 0.55;
+  animation-delay: -5s;
+}
+
+/* the Contact nav item sits outside the container's right margin,
+   so this one reaches past it with a negative offset */
+.deco-vine-3 {
+  right: -70px;
+  width: 80px;
+  opacity: 0.45;
+  animation-delay: -9s;
+}
+
+@keyframes sway {
+  from {
+    transform: rotate(-1.2deg);
+  }
+  to {
+    transform: rotate(1.2deg);
+  }
+}
+
+/* tree & roots beside the About paragraphs.
+   Anchored just past the 600px text column so it stays close to the
+   paragraphs instead of drifting to the right edge on wide screens.
+   max-width keeps it inside the container as space tightens. */
+.deco-tree {
+  left: 680px;
+  top: 2em;
+  width: 350px;
+  max-width: calc(100% - 690px);
+  opacity: 0.8;
+  z-index: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .deco-vine {
+    animation: none;
+  }
+}
+
+/* the column left of the text gets too narrow for the tree to read */
+@media all and (max-width: 1120px) {
+  .deco-tree {
+    display: none;
+  }
+}
+
+/* below laptop width the vines start crowding the hero paragraph */
+@media all and (max-width: 1024px) {
+  .deco-vine {
+    display: none;
+  }
+}
+
+/* MOBILE: one vine beside the hamburger + contours behind the title.
+   The tree and the other two vines have no room in a narrow column. */
+@media all and (max-width: 768px) {
+  .deco-tree,
+  .deco-vine-1,
+  .deco-vine-2 {
+    display: none;
+  }
+  .deco-vine-3 {
+    display: block;
+    top: -4em;
+    right: 0;
+    width: 72px;
+    opacity: 0.6;
+  }
+  .deco-contours {
+    top: -1em;
+    left: -1.5em;
+    width: 340px;
+    max-width: 92vw;
+  }
+  /* the shapes shrink on mobile, so thicken the lines to stay visible.
+     Targets the inner <g>: a CSS rule there beats its stroke-width attribute. */
+  .deco-contours g {
+    stroke-width: 2.4;
+  }
+}
+
 /* ====== Organic background ====== */
 
 .organic-bg {
@@ -418,7 +555,7 @@ footer h4 img {
 }
 @media all and (min-width: 480px) and (max-width: 768px) {
   nav {
-    background-color: white;
+    background-color: var(--bg-frost);
     height: 10%;
     grid-template-columns: auto auto;
   }
@@ -468,9 +605,6 @@ footer h4 img {
   .main-greet {
     margin-top: 7.5em;
   }
-  .about-grid img {
-    display: none;
-  }
   .project-grid {
     display: flex;
     flex-direction: column;
@@ -488,7 +622,7 @@ footer h4 img {
 }
 @media all and (max-width: 480px) {
   nav {
-    background-color: white;
+    background-color: var(--bg-frost);
     height: 10%;
     grid-template-columns: auto auto;
   }
@@ -544,9 +678,6 @@ footer h4 img {
   }
   .main-greet p {
     max-width: 650px;
-  }
-  .about-grid img {
-    display: none;
   }
   .project-grid {
     display: flex;
